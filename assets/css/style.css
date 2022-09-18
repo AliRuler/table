@@ -1,0 +1,105 @@
+:root {
+  --bs-blue: #2353EB;
+  --bs-primary: #2353EB;
+  --bs-primary-rgb: 35,83,235;
+  --bs-secondary-rgb: 232,62,140;
+  --bs-pink: #e83e8c;
+  --bs-white: #fff;
+}
+
+.sidebar.sidebar-dark.accordion {
+  background-color: var(--bs-blue);
+}
+
+.login {
+  /*display: none;*/
+}
+
+#exampleFirstName {
+  font-size: .8rem;
+  border-radius: 10rem;
+  padding: 1rem;
+  margin: 3em 0;
+}
+
+#exampleInputEmail {
+  margin: 3em 0;
+}
+
+.btn-user {
+  background-color: var(--bs-blue);
+}
+
+.btn-primary {
+  background-color: var(--bs-blue);
+}
+
+.form-control {
+  border-radius: 5em;
+}
+
+.btn {
+  border-radius: 5em;
+}
+
+.card-row {
+  padding: .5em;
+  margin: 1em;
+  border-radius: 5em;
+}
+
+p {
+  margin: 0;
+}
+
+.data {
+  background-color: var(--bs-white);
+  padding: 0.5em;
+  border-radius: 5em;
+}
+
+.form-control-user {
+  margin: 3em 0;
+}
+
+.fa.fa-trash-o {
+  font-size: 1.5em;
+}
+
+.span-i {
+  background-color: var(--bs-body-bg);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bg-danger {
+  background-color: var(--bs-pink);
+}
+
+.data.userdata {
+  flex-basis: 23%;
+}
+
+#card-footer {
+  border-top: 1px solid #e3e6f0;
+}
+
+.fa.fa-times {
+  color: var(--bs-pink);
+}
+
+.fa.fa-check {
+  color: var(--bs-green);
+  /*display: none;*/
+}
+
+#delete-all {
+  visibility: visible;
+  background-color: var(--bs-pink);
+}
+
