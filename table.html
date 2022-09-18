@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Table - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion p-0">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
+                    <div class="sidebar-brand-text mx-3"><span>Brand</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link table-li" href="#"><i class="fas fa-table"></i><span>Table</span></a></li>
+                    <li class="nav-item"><a class="nav-link login-li" href="#"><i class="far fa-user-circle"></i><span>Login</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ..."><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                        </form>
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                                    <form class="me-auto navbar-search w-100">
+                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <div class="nav-link"><span class="badge bg-secondary badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <div class="nav-link"><span class="badge bg-secondary badge-counter">7</span><i class="fas fa-envelope fa-fw"></i></div>
+                                <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
+                            </li>
+                            <div class="d-none d-sm-block topbar-divider"></div>
+                            <li class="nav-item dropdown no-arrow">
+                                <div class="nav-link"><img class="border rounded-circle img-profile" src="assets/img/avatars/avatar2.jpeg"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid table-card">
+                    <div class="card shadow">
+                        <div class="card-header py-3">
+                            <p class="text-primary m-0 fw-bold">users Info</p>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="text-dark mb-4" style="text-align: center;font-weight: bold;">not done tasks</h4>
+                            <div id="none-tasks">
+                                <div class="bg-primary d-flex justify-content-around card-row" style="visibility: hidden;"><span class="d-flex justify-content-center data userdata">Username:</span><span class="d-flex justify-content-center data userdata">Email:</span><span class="d-flex justify-content-center data userdata">Phone number:</span><span class="span-i check"><i class="fa fa-check"></i><i class="fa fa-times"></i></span><span class="span-i"><i class="fa fa-trash-o" style="color: var(--bs-pink);"></i></span></div>
+                            </div>
+                            <h4 class="text-dark mb-4" style="text-align: center;font-weight: bold;">done tasks</h4>
+                            <div id="done-tasks"></div>
+                        </div>
+                        <div class="card-header py-3" id="card-footer">
+                            <div id="all-tasks-1">
+                                <div class="bg-primary d-flex justify-content-around card-row" style="visibility: hidden;"><span class="d-flex justify-content-center data userdata" style="color: var(--bs-green);">Username:</span><span class="d-flex justify-content-center data userdata" style="color: var(--bs-pink);">Email:</span><span class="d-flex justify-content-center data userdata" style="color: var(--bs-blue);">Phone number:</span><span class="span-i"><i class="fa fa-check" style="color: var(--bs-green);"></i></span><span id="delete-all" class="span-i"><i class="fa fa-trash-o" style="color: var(--bs-white);"></i></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container login">
+                    <div class="row justify-content-center">
+                        <div class="col-md-9 col-lg-12 col-xl-10">
+                            <div class="card shadow-lg o-hidden border-0 my-5">
+                                <div class="card-body p-0">
+                                    <div class="row">
+                                        <div class="col-lg-6 d-none d-lg-flex">
+                                            <div class="flex-grow-1 bg-login-image" style="background-image: url(&quot;assets/img/dogs/image3.jpeg&quot;);"></div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="p-5">
+                                                <div class="text-center">
+                                                    <h4 class="text-dark mb-4" style="font-weight: bold;">Login form</h4>
+                                                </div>
+                                                <form id="userForm" class="user">
+                                                    <div class="mb-3"><input class="form-control form-control-user form-control" type="text" id="exampleFirstName" placeholder="Enter username..." name="username"></div>
+                                                    <div class="mb-3"><input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." name="email"></div>
+                                                    <div class="mb-3"><input class="form-control form-control-user" type="tel" id="phone" placeholder="Enter phone number..." name="phone"></div>
+                                                    <div class="mb-3">
+                                                        <div class="custom-control custom-checkbox small"></div><button class="btn btn-primary btn-user w-100" id="userButton" type="submit">login</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/table.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
